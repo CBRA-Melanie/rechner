@@ -1,0 +1,124 @@
+.range{ /* Positionierung Regler */
+  height: 100px;
+  width: 400px;
+  background:#F8F8F8;
+  border-radius: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.cb-range2 {
+	margin-bottom: 30px;
+}
+
+.range .sliderValue,
+.range .sliderValue2{
+  position:relative;
+  width:90%;
+}
+.range .sliderValue span,
+.range .sliderValue2 span{ /* Formatiert die Zahlen bei den Reglern */
+  position: absolute;
+  color: black;
+  font-weight: 600;
+  top: 5px;
+left: 50%;
+}
+
+.range .field{ /* Formatiert Regler und value rechts und links */
+  position:relative;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.range .field .value{ /* Formatiert beide Zahlen rechst und links */
+  position:absolute;
+  font-size:25px;
+  font-weight:600;
+  color: black;
+cursor: pointer;
+}
+
+.range .field .value.left{
+  left: 20px;
+}
+.range .field .value.right{
+  right: 20px;
+}
+
+.range h4 {
+  position: absolute;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.range .field .h4-text {
+  top:5px;
+  left: 60px;
+}
+
+.range .field input{ /* Formatiert Regler */
+  -webkit-appearance: none;
+  height:4px;
+  background:#ddd;
+  border-radius: 5px;
+  outline:none;
+  border:none;
+  width:70%;
+}
+
+
+.cb-result {
+	display: flex;
+	justify-content:center;
+	padding-bottom: 50px;
+}
+
+.cb-result-column{
+	width: 20%;
+}
+
+.cb-result-name {
+	padding-bottom: 15px;
+}
+
+.cb-result-right {
+	text-align:right;
+}
+
+@media only screen and (max-width:767px){
+
+.range{ /* Positionierung Regler */
+  height: 100px;
+  width: 300px;
+  background:#F8F8F8;
+  border-radius: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.range .field .h4-text {
+  left: 20px;
+}
+
+.cb-result {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 50px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.cb-result-column{
+	width: 50%;
+}
+
+.cb-result-name {
+	padding-bottom: 15px;
+}
+
+.cb-result-right {
+	text-align:right;
+}
+}
